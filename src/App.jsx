@@ -4,11 +4,8 @@ import "./App.css";
 function App() {
 
     const [mode, setMode] = useState("light")
-
     const [value, setInput] = useState("");
-
     const [_output, setOutput] = useState("")
-
     const updateValue = (Value) => {
         setInput(prev => prev + Value);
     };
@@ -20,7 +17,6 @@ function App() {
     const removeValue = () => {
         setInput(prevValue => prevValue.slice(0, -1))
     }
-
     const getResult = () => {
         try {
             const result = eval(value);
@@ -31,7 +27,6 @@ function App() {
             setOutput("Error");
         }
     };
-
     return (
         <div className="container">
             <div className="calculator" style={{ backgroundColor: mode === "dark" ? "black" : "white", color: mode === "dark" ? "white" : "black"}}>
