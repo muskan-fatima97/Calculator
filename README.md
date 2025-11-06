@@ -1,16 +1,25 @@
-# React + Vite
+# React Calculator App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean and simple calculator built with React and Vite.  
+Live demo: [Deployed on Vercel](https://basiccalculator-gmkk4acgd-muskan-fatimas-projects-a0b55af8.vercel.app/)
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Basic arithmetic operations: add, subtract, multiply, divide  
+- Clear and reset functionality  
+- Light/dark theme toggle  
+- Responsive layout for desktop and mobile  
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React.js (with Hooks)  
+- Vite for fast development build  
+- CSS for styling (light & dark mode)  
+- Deployed on Vercel  
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Clone the repository
+```bash
+git clone https://github.com/muskan-fatima97/Calculator.git
+cd Calculator
