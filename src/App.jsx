@@ -5,27 +5,18 @@ function App() {
 
     const [mode, setMode] = useState("light")
     const [value, setInput] = useState("");
-    const [_output, setOutput] = useState("")
     const updateValue = (Value) => {
         setInput(prev => prev + Value);
     };
 
     const ClearValue = () => {
         setInput("");
-        setOutput("");
     }
     const removeValue = () => {
         setInput(prevValue => prevValue.slice(0, -1))
     }
     const getResult = () => {
-        try {
-            const result = eval(value);
-            setOutput(result);
-            setInput(result.toString());
-        } catch (error) {
-            console.error("Wrong Expression: ", error);
-            setOutput("Error");
-        }
+       setInput(eval(value).toString())
     };
     return (
         <div className="container">
